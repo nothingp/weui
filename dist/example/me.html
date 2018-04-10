@@ -52,19 +52,19 @@
                 </div>
                 <div class="weui-cell__ft">美国xxxx公司</div>
             </div>
-            <div class="weui-cell">
+            <div class="weui-cell nothing_extend_info" style="display: none">
                 <div class="weui-cell__bd">
                     <p>单位</p>
                 </div>
                 <div class="weui-cell__ft">美国xxxx公司</div>
             </div>
-            <div class="weui-cell">
+            <div class="weui-cell nothing_extend_info" style="display: none">
                 <div class="weui-cell__bd">
                     <p>单位</p>
                 </div>
                 <div class="weui-cell__ft">美国xxxx公司</div>
             </div>
-            <div class="weui-cell">
+            <div class="weui-cell nothing_extend_info" style="display: none">
                 <div class="weui-cell__bd">
                     <p>单位</p>
                 </div>
@@ -74,7 +74,7 @@
     </div>
     <div class="weui-panel__ft">
         <a href="javascript:showOrHideItem();" class="weui-cell weui-cell_access weui-cell_link">
-            <div class="weui-cell__bd nothing_text_center">查看更多</div>
+            <div class="weui-cell__bd nothing_text_center" id="showBtn">查看更多</div>
         </a>
     </div>
 </div>
@@ -173,7 +173,13 @@
 <script src="./example.js"></script>
 <script>
     function showOrHideItem(){
-        alert('123')
+        var extendInfos = document.getElementsByClassName('nothing_extend_info');
+        for(var i =0;i<extendInfos.length;i++){
+            var display = extendInfos[i].style.display;
+            extendInfos[i].style.display = display=='none'?'':'none';
+        }
+        var text = document.getElementById('showBtn').innerHTML;
+        document.getElementById('showBtn').innerHTML = text=='查看更多'?'收起':'查看更多';
     }
 </script>
 </body>
