@@ -1,0 +1,26 @@
+.nothing_header{
+    height: 25rem;
+}
+
+.nothing_header_banner{
+    height: 10rem;
+    overflow: hidden;
+}
+
+.nothing_header_logo{
+    position: relative;
+    top:-4rem;
+}
+
+.nothing_header_info{
+    height: 15rem;
+    text-align: center;
+}
+
+.nothing_no_margin_top{
+    margin-top: 0
+}
+
+.nothing_text_center{
+   text-align: center;
+}
