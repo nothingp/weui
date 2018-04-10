@@ -24,3 +24,26 @@
 .nothing_text_center{
    text-align: center;
 }
+
+.nothing_float_right{
+    float: right;
+}
+
+.nothing_base_front_size{
+    font-size: 1rem;
+}
+
+.nothing_bottom{
+    height: 46px;background: #fff
+}
+
+.nothing_fix_bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nothing_margin_10{
+    margin: 0 10px;
+}

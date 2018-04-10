@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
-    <title>WeUI</title>
+    <title>个人信息</title>
     <link rel="stylesheet" href="../style/weui.css"/>
     <link rel="stylesheet" href="./example.css"/>
     <link rel="stylesheet" href="./me.css"/>
@@ -34,7 +34,6 @@
                 </div>
                 <div class="weui-cell__ft">18922191872</div>
             </div>
-
             <div class="weui-cell">
                 <div class="weui-cell__bd">
                     <p>城市</p>
@@ -53,10 +52,28 @@
                 </div>
                 <div class="weui-cell__ft">美国xxxx公司</div>
             </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>单位</p>
+                </div>
+                <div class="weui-cell__ft">美国xxxx公司</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>单位</p>
+                </div>
+                <div class="weui-cell__ft">美国xxxx公司</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>单位</p>
+                </div>
+                <div class="weui-cell__ft">美国xxxx公司</div>
+            </div>
         </div>
     </div>
     <div class="weui-panel__ft">
-        <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+        <a href="javascript:showOrHideItem();" class="weui-cell weui-cell_access weui-cell_link">
             <div class="weui-cell__bd nothing_text_center">查看更多</div>
         </a>
     </div>
@@ -65,22 +82,36 @@
     <div class="weui-panel__hd">人脉关系</div>
     <div class="weui-panel__bd">
         <div class="weui-flex">
-            <div class="weui-flex__item">
+            <div class="weui-flex__item" style="text-align: center">
                 <img src="./images/icon_tabbar.png" alt="">
             </div>
-            <div class="weui-flex__item">
+            <div class="weui-flex__item" style="text-align: center">
                 <img src="./images/icon_tabbar.png" alt="">
             </div>
-            <div class="weui-flex__item">
+            <div class="weui-flex__item" style="text-align: center">
                 <img src="./images/icon_tabbar.png" alt="">
             </div>
-            <div class="weui-flex__item">
+            <div class="weui-flex__item" style="text-align: center">
                 <img src="./images/icon_tabbar.png" alt="">
             </div>
-            <div class="weui-flex__item">
+            <div class="weui-flex__item" style="text-align: center">
                 <img src="./images/icon_tabbar.png" alt="">
             </div>
-            <div class="weui-flex__item">
+        </div>
+        <div class="weui-flex">
+            <div class="weui-flex__item" style="text-align: center">
+                <img src="./images/icon_tabbar.png" alt="">
+            </div>
+            <div class="weui-flex__item" style="text-align: center">
+                <img src="./images/icon_tabbar.png" alt="">
+            </div>
+            <div class="weui-flex__item" style="text-align: center">
+                <img src="./images/icon_tabbar.png" alt="">
+            </div>
+            <div class="weui-flex__item" style="text-align: center">
+                <img src="./images/icon_tabbar.png" alt="">
+            </div>
+            <div class="weui-flex__item" style="text-align: center">
                 <img src="./images/icon_tabbar.png" alt="">
             </div>
         </div>
@@ -96,7 +127,7 @@
                      alt="">
             </div>
             <div class="weui-media-box__bd">
-                <h4 class="weui-media-box__title">刘朝林</h4>
+                <h4 class="weui-media-box__title">刘朝林<span class="nothing_float_right nothing_base_front_size">2018-04-09 13:56:01</span></h4>
                 <p class="weui-media-box__desc">值得信赖的合伙人</p>
             </div>
         </a>
@@ -107,7 +138,7 @@
                      alt="">
             </div>
             <div class="weui-media-box__bd">
-                <h4 class="weui-media-box__title">刘朝林</h4>
+                <h4 class="weui-media-box__title">刘朝林<span class="nothing_float_right nothing_base_front_size">2018-04-09 13:56:01</span></h4>
                 <p class="weui-media-box__desc">值得信赖的合伙人</p>
             </div>
         </a>
@@ -118,17 +149,20 @@
                      alt="">
             </div>
             <div class="weui-media-box__bd">
-                <h4 class="weui-media-box__title">刘朝林</h4>
+                <h4 class="weui-media-box__title">刘朝林<span class="nothing_float_right nothing_base_front_size">2018-04-09 13:56:01</span></h4>
                 <p class="weui-media-box__desc">值得信赖的合伙人</p>
             </div>
         </a>
     </div>
 </div>
-<div class="weui-flex">
-    <div class="weui-flex__item" style="margin: 0 10px">
+<div class="nothing_bottom">
+
+</div>
+<div class="weui-flex nothing_fix_bottom" >
+    <div class="weui-flex__item nothing_margin_10" >
         <a href="javascript:;" class="weui-btn weui-btn_default">留言</a>
     </div>
-    <div class="weui-flex__item" style="margin: 0 10px">
+    <div class="weui-flex__item nothing_margin_10">
         <a href="javascript:;" class="weui-btn weui-btn_warn">打电话</a>
     </div>
 </div>
@@ -137,5 +171,10 @@
 <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
 <script src="./example.js"></script>
+<script>
+    function showOrHideItem(){
+        alert('123')
+    }
+</script>
 </body>
 </html>
