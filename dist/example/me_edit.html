@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>个人信息</title>
+    <link rel="stylesheet" href="../style/weui.css"/>
+    <link rel="stylesheet" href="./example.css"/>
+    <link rel="stylesheet" href="./me.css"/>
+</head>
+<body ontouchstart>
+<div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+<div class="weui-panel nothing_header">
+    <div class="nothing_header_banner">
+        <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1690014475,2907298497&fm=27&gp=0.jpg">
+    </div>
+    <div class="nothing_header_info">
+        <div class="nothing_header_logo">
+            <img style="height: 8rem" class="weui-media-box__thumb"
+                 src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3802506693,1778634825&fm=27&gp=0.jpg"
+                 alt="" id="showIOSActionSheet">
+            <div>
+                <div class="weui-mask" id="iosMask" style="display: none"></div>
+                <div class="weui-actionsheet" id="iosActionsheet">
+                    <div class="weui-actionsheet__title">
+                        <p class="weui-actionsheet__title-text">图片选择</p>
+                    </div>
+                    <div class="weui-actionsheet__menu">
+                        <div class="weui-actionsheet__cell">手机图片</div>
+                        <div class="weui-actionsheet__cell">摄像头</div>
+                    </div>
+                    <div class="weui-actionsheet__action">
+                        <div class="weui-actionsheet__cell" id="iosActionsheetCancel">取消</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access nothing_no_margin_top">
+    <div class="weui-panel__bd">
+        <div class="weui-cells__title">个人信息</div>
+        <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">qq</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入qq号"/>
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_vcode">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">手机号</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="tel" placeholder="请输入手机号"/>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <button class="weui-vcode-btn">获取验证码</button>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label for="" class="weui-label">日期</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="date" value=""/>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label for="" class="weui-label">时间</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="datetime-local" value="" placeholder=""/>
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_vcode">
+                    <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" placeholder="请输入验证码"/>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <img class="weui-vcode-img" src="./images/vcode.jpg" />
+                    </div>
+                </div>
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label for="" class="weui-label">卡号</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" value="weui input error" placeholder="请输入卡号"/>
+                </div>
+                <div class="weui-cell__ft">
+                    <i class="weui-icon-warn"></i>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label for="" class="weui-label">卡号</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" value="weui input error" placeholder="请输入卡号"/>
+                </div>
+                <div class="weui-cell__ft">
+                    <i class="weui-icon-warn"></i>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label for="" class="weui-label">卡号</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="number" pattern="[0-9]*" value="weui input error" placeholder="请输入卡号"/>
+                </div>
+                <div class="weui-cell__ft">
+                    <i class="weui-icon-warn"></i>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_select">
+                <div class="weui-cell__bd">
+                    <select class="weui-select" name="select1">
+                        <option selected="" value="1">微信号</option>
+                        <option value="2">QQ号</option>
+                        <option value="3">Email</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_select weui-cell_select-after">
+                <div class="weui-cell__hd">
+                    <label for="" class="weui-label">国家/地区</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <select class="weui-select" name="select2">
+                        <option value="1">中国</option>
+                        <option value="2">美国</option>
+                        <option value="3">英国</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nothing_bottom">
+
+</div>
+<div class="weui-flex nothing_fix_bottom" >
+    <div class="weui-flex__item nothing_margin_10" >
+        <a href="javascript:;" class="weui-btn weui-btn_default">取消</a>
+    </div>
+    <div class="weui-flex__item nothing_margin_10">
+        <a href="javascript:;" class="weui-btn weui-btn_primary" id="showTooltips">确定</a>
+    </div>
+</div>
+
+<script src="./zepto.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script src="./example.js"></script>
+<script>
+    function showOrHideItem(){
+        var extendInfos = document.getElementsByClassName('nothing_extend_info');
+        for(var i =0;i<extendInfos.length;i++){
+            var display = extendInfos[i].style.display;
+            extendInfos[i].style.display = display=='none'?'':'none';
+        }
+        var text = document.getElementById('showBtn').innerHTML;
+        document.getElementById('showBtn').innerHTML = text=='查看更多'?'收起':'查看更多';
+    }
+
+    $(function(){
+        var $iosActionsheet = $('#iosActionsheet');
+        var $iosMask = $('#iosMask');
+
+        function hideActionSheet() {
+            $iosActionsheet.removeClass('weui-actionsheet_toggle');
+            $iosMask.fadeOut(200);
+        }
+
+        $iosMask.on('click', hideActionSheet);
+        $('#iosActionsheetCancel').on('click', hideActionSheet);
+        $("#showIOSActionSheet").on("click", function(){
+            $iosActionsheet.addClass('weui-actionsheet_toggle');
+            $iosMask.fadeIn(200);
+        });
+
+
+        var $tooltips = $('.js_tooltips');
+
+        $('#showTooltips').on('click', function(){
+            if ($tooltips.css('display') != 'none') return;
+
+            // toptips的fixed, 如果有`animation`, `position: fixed`不生效
+            $('.page.cell').removeClass('slideIn');
+
+            $tooltips.css('display', 'block');
+            setTimeout(function () {
+                $tooltips.css('display', 'none');
+            }, 2000);
+        });
+    });
+</script>
+</body>
+</html>
